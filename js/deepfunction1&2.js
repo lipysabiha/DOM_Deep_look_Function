@@ -38,7 +38,7 @@ console.log(calculator.increase(50, 5));
 
 // Higher Order Functions - it works  either by taking them as arguments or by returning them.
 
-    // Accept other function as argument
+    // function as argument
 
     function repeat(run) {
         run();
@@ -80,7 +80,23 @@ console.log(calculator.increase(50, 5));
 
     console.log(randomPick(hi, bye));
 
-    // Return of function
+    // Return of function -from DOM Deep Look Function part-02;
+
+        //  return -review again the return function
+
+        function some() {
+            return "Hi";
+        }
+
+        console.log(some());
+
+        function someThing() {
+            return function anyThing() {
+                return 'bye';
+            }
+        }
+        
+        console.log(someThing());
 
 // Function as Argument
 
