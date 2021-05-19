@@ -51,7 +51,6 @@
     console.log(isEven2(2));
     
     const isEven3 = n => n % 2 === 0;
-    
     console.log(isEven3(5));
 
 
