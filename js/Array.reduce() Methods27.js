@@ -74,4 +74,16 @@ const totalTk = product.reduce(function(acc, item) {
 console.log(totalTk);
 
 
-const voters = ['Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'Absent'];
+const votes = ['Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'Absent'];
+
+const result =  votes.reduce((acc, vote) => {
+    if(acc[vote]) {
+        acc[vote] ++
+    } else {
+        acc[vote] = 1;
+    }
+    return acc;
+}, {});
+
+console.log(result);
+
