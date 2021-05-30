@@ -49,9 +49,6 @@ const max = numbers.reduce((acc, val) => {
 
 console.log(max);
 
-
-const voters = ['Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'Absent'];
-
 const product = [
     {
         name: 'Pen',
@@ -76,3 +73,5 @@ const totalTk = product.reduce(function(acc, item) {
 
 console.log(totalTk);
 
+
+const voters = ['Yes', 'No', 'Yes', 'Yes', 'Yes', 'No', 'Absent'];
