@@ -17,6 +17,7 @@ function add(a, b, c, d, e) {
 };
 
 console.log(add(...num));
+console.log(Math.min(...num));
 console.log(Math.max(...num)); //to find out minimum or maximum number;
 
 // Spread Operator in Array Literals;
@@ -31,4 +32,36 @@ console.log(...arrayTwo);
 let name = ['Sakib', 'Tamim', 'Mushfiq'];
 let position  = ['All-rounder', 'Batsman', 'Keeper'];
 
-//Spread Operator in Object Literal;
+let team = [...name, ...position];
+
+console.log(team);
+
+let str = 'Hello';
+console.log(...str);
+
+let newStr = [...str];
+console.log(newStr);
+
+//Spread Operator in Object Literals;
+
+const obj1 = {foo: 'bar', x: 42};
+const obj2 = {foo: 'baz', y: 13};
+
+const clonedObj = {...obj1};
+// Object {foo: 'bar', x: 42};
+
+const mergedObj = {...obj1, ...obj2};
+// Object {foo: 'baz', x: 13};
+
+
+let products = {
+    name: 'Laptop',
+    price: 30000,
+};
+let place = {
+    shopName: 'Random Laptop Shop',
+    address: 'Dhaka, Bangladesh',
+};
+
+let store = {...products, ...place};
+console.log(store);
