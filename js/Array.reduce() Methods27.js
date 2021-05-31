@@ -68,7 +68,7 @@ const product = [
 ];
 
 const totalTk = product.reduce(function(acc, item) {
-    return acc + item.amount*item.price;
+    return acc + item.amount * item.price;
 }, 0);  //here, 0 is initial value of acc; we can use any number;
 
 console.log(totalTk);
